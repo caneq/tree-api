@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesApi.Web", "TreesApi.Web\TreesApi.Web.csproj", "{EE5F884F-C908-4F2C-A1B9-E8ACBA86693D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9752EB66-EC45-432E-AE1E-FCE33121F7AF}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesApi.BusinessLogic", "TreesApi.BusinessLogic\TreesApi.BusinessLogic.csproj", "{37173780-94D8-4ED1-977D-F5574A7B7EEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesApi.DataAccess", "TreesApi.DataAccess\TreesApi.DataAccess.csproj", "{CCF50879-DC40-4C77-B1FD-03F8D8B00F5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE5F884F-C908-4F2C-A1B9-E8ACBA86693D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5F884F-C908-4F2C-A1B9-E8ACBA86693D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5F884F-C908-4F2C-A1B9-E8ACBA86693D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5F884F-C908-4F2C-A1B9-E8ACBA86693D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37173780-94D8-4ED1-977D-F5574A7B7EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37173780-94D8-4ED1-977D-F5574A7B7EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37173780-94D8-4ED1-977D-F5574A7B7EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37173780-94D8-4ED1-977D-F5574A7B7EEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF50879-DC40-4C77-B1FD-03F8D8B00F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF50879-DC40-4C77-B1FD-03F8D8B00F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF50879-DC40-4C77-B1FD-03F8D8B00F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF50879-DC40-4C77-B1FD-03F8D8B00F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿services:
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 123
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - trees-network
+
+  trees-api:
+    container_name: trees-api
+    image: trees-api
+    build:
+      context: .
+      dockerfile: TreesApi.Web/Dockerfile
+    ports:
+      - "5935:80"
+    environment:
+      ConnectionStrings__DefaultConnection: User ID=postgres;Password=123;Host=postgres;Port=5432;Database=TreesApi;Pooling=true
+    networks:
+      - trees-network
+
+volumes:
+  pgdata:
+
+networks:
+  trees-network:
+    driver: bridge
