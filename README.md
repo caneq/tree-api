@@ -10,3 +10,4 @@
 - Use Full Text Index for JournalEntry Text column
 - Generate sequential EventId using database Sequence
 - Do not load Text column when loading Pageable JournalEntries
+- Use ParentId to load a Tree with all child nodes instead of CTE
