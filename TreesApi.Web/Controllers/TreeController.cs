@@ -16,28 +16,28 @@ public class TreeController : ControllerBase
     }
     
     [HttpPost("/api.user.tree.get")]
-    public async Task<IActionResult> GetOrCreateTree([FromQuery] GetOrCreateTreeParameters parameters, CancellationToken ct = default)
+    public async Task<IActionResult> GetOrCreateTree([FromQuery] GetOrCreateTreeParameters parameters)
     {
         var result = await _treeService.GetOrCreateTreeAsync(parameters);
         return Ok(result);
     }
     
     [HttpPost("/api.user.tree.node.create")]
-    public async Task<IActionResult> CreateNode([FromQuery] CreateNodeParameters parameters, CancellationToken ct = default)
+    public async Task<IActionResult> CreateNode([FromQuery] CreateNodeParameters parameters)
     {
         await _treeService.CreateNodeAsync(parameters);
         return Ok();
     }
     
     [HttpPost("/api.user.tree.node.delete")]
-    public async Task<IActionResult> DeleteNode([FromQuery] DeleteNodeParameters parameters, CancellationToken ct = default)
+    public async Task<IActionResult> DeleteNode([FromQuery] DeleteNodeParameters parameters)
     {
         await _treeService.DeleteNodeAsync(parameters);
         return Ok();
     }
     
     [HttpPost("/api.user.tree.node.rename")]
-    public async Task<IActionResult> RenameNode([FromQuery] RenameNodeParameters parameters, CancellationToken ct = default)
+    public async Task<IActionResult> RenameNode([FromQuery] RenameNodeParameters parameters)
     {
         await _treeService.RenameNodeAsync(parameters);
         return Ok();
